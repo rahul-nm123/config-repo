@@ -4,6 +4,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: candidate-service
 spring:
   application:
     name: candidate-service
