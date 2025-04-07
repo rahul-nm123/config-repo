@@ -1,0 +1,21 @@
+server:
+  port: 8082
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jobdb
+    username: postgres
+    password: QweAsdZxc@209
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: true
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+service:
+  candidate-url: http://candidate-service:8081/api/v1/candidateService
