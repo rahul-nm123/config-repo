@@ -20,5 +20,5 @@ spring:
     hibernate:
       ddl-auto: update
 service:
-  job-url: http://job-service:8082/api/v1/jobService
-  candidate-url: http://candidate-service:8081/api/v1/candidateService
+  job-url: http://localhost:8082/api/v1/jobService
+  candidate-url: http://localhost:8081/api/v1/candidateService
